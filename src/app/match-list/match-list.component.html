@@ -1,6 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label class="label">Filter by season</label>
+        <select class="form-control" name="season" [(ngModel)]="season">
+          <option *ngFor="let season of seasons" [value]="season">{{season}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-3">
       <div class="form-group">
         <label class="label">Search by Team name:</label>
         <input type="text" class="form-control" [(ngModel)]="teamName" name="teamName"/>
@@ -8,7 +16,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-3" *ngFor="let match of matches | filterTeams:teamName">
+    <div class="col-sm-3" *ngFor="let match of matches | filterTeams:teamName | filterSeasons:season">
       <a routerLink="/matches/season/{{match.season}}/match/{{match.id}}" class="match-link">
         <div class="well match">
           <div class="match-title">

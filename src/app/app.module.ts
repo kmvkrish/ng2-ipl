@@ -11,6 +11,7 @@ import { MatchListComponent } from './match-list/match-list.component';
 import { MatchDetailsComponent } from './match-details/match-details.component';
 import { MatchSummaryComponent } from './match-summary/match-summary.component';
 import { FilterTeamsPipe } from './filter-teams.pipe';
+import { FilterSeasonsPipe } from './filter-seasons.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FilterTeamsPipe } from './filter-teams.pipe';
     MatchListComponent,
     MatchDetailsComponent,
     MatchSummaryComponent,
-    FilterTeamsPipe
+    FilterTeamsPipe,
+    FilterSeasonsPipe
   ],
   imports: [
     BrowserModule,
