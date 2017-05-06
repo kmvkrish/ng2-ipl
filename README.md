@@ -1,4 +1,4 @@
-# Ng2-IPL
+# ng2-IPL
 
 ![Alt text](./images/match-list.png)
 
@@ -12,7 +12,7 @@ Built on NodeJS, ExpressJS, MongoDB, and Angular2 (using angular-cli --> http://
 2. Search for matches played by a specific teams (of all seasons)
 3. Select a match to view complete details
 4. Get match summary, ball-by-ball, in detail.
-
+5. Filter the available matches based on >Season 
 
 ![Alt text](./images/match-details.png)
 
