@@ -22,6 +22,7 @@ Built on NodeJS, ExpressJS, MongoDB, and Angular2 (using angular-cli --> http://
 1. Install NodeJS, MongoDB on the machine, angular-cli
 2. Start MongoDB instance.
 3. clone this repository & >"cd" into it
-4. run >"npm install" to install all dependencies
-5. run >"ng build" to generate final project
-6. run >"node server" to start server on >"http://localhost:3000"
+4. run "mongoimport --db ipl --type csv --headerline --file "./data/matches.csv" " and "mongoimport --db ipl --type csv --headerline --file "./data/deliveries.csv""
+5. run "npm install" to install all dependencies
+6. run "ng build" to generate final project
+7. run "node server" to start server on >"http://localhost:3000"
