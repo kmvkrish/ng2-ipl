@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <label class="label">Search by Team name:</label>
+        <input type="text" class="form-control" [(ngModel)]="teamName" name="teamName"/>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let match of matches | filterTeams:teamName">
+      <a routerLink="/matches/season/{{match.season}}/match/{{match.id}}" class="match-link">
+        <div class="well match">
+          <div class="match-title">
+            <h4>Match {{match.id}}</h4>
+            <p>{{match.team1}} vs {{match.team2}}</p>
+          </div>
+          <div class="match-body">
+            <p>Toss: {{match.toss_winner}}</p>
+            <p>Opted to: {{match.toss_decision}}</p>
+            <p>
+              <i class="fa fa-calendar-o"></i>
+              &nbsp; {{match.date | date: "MMM dd, yyyy"}}
+            </p>
+          </div>
+          <div class="match-footer">
+            <p>Venue: {{match.venue}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

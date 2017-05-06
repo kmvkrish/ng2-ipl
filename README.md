@@ -1,31 +1,27 @@
-# Ng2Ipl
+# Ng2-IPL
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+![Alt text](./images/match-list.png)
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Development Details
 
-## Code scaffolding
+ng2-ipl is a web application developed as part of "Agile Labs Fullstack Challenge" to list the matches of IPL season, and show complete details of a match.
+Built on NodeJS, ExpressJS, MongoDB, and Angular2 (using angular-cli --> http://cli.angular.io)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+# Features
+1. List all matches in a grid.
+2. Search for matches played by a specific teams (of all seasons)
+3. Select a match to view complete details
+4. Get match summary, ball-by-ball, in detail.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+![Alt text](./images/match-details.png)
 
-## Running unit tests
+![Alt text](./images/match-summary.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Deployment Details
+1. Install NodeJS, MongoDB on the machine, angular-cli
+2. Start MongoDB instance.
+3. clone this repository & >"cd" into it
+4. run >"npm install" to install all dependencies
+5. run >"ng build" to generate final project
+6. run >"node server" to start server on >"http://localhost:3000"

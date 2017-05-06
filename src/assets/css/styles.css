@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	padding-top: 30px;
+	background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+nav{
+    background: #fff;
+    vertical-align: middle;
+}
+
+.well{
+	background: #fff;
+	border: 1px solif #000;
+	box-sizing: border-box;
+	color: black;
+}

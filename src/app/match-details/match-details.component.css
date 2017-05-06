@@ -1,0 +1,9 @@
+.match-summary{
+    width: 280px !important;
+    background: #fff;
+    transition: box-shadow 0.5s ease;
+}
+
+.match-summary:hover{
+    box-shadow: 0px 0px 15px #888888;
+}

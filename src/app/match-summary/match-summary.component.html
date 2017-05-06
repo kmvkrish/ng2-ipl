@@ -1,0 +1,18 @@
+<ul class="list-group" *ngIf="matchScoreboard">
+  <li *ngFor="let item of matchScoreboard" class="list-group-item">
+    <div class="scoreboard-item">
+      <p class="ball">
+        <i class="badge">{{item.over}}, {{item.ball}}</i>
+      </p>
+      <p class="ball-details">
+        <strong>{{item.bowler}}</strong> to <strong>{{item.batsman}} </strong>,
+        <i class="badge badge-danger" *ngIf="item.player_dismissed">OUT </i>
+        <span *ngIf="item.noball_runs">
+            <i class="badge badge-danger">No Ball</i>
+            &nbsp; {{item.noball_runs}}
+        </span>
+        <i class="badge">{{item.total_runs}}</i> runs
+      </p>
+    </div>
+  </li>
+</ul>

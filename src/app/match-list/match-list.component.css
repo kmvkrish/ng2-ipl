@@ -1,0 +1,27 @@
+a.match-link{
+    text-decoration: none;
+}
+a.match-link:hover{
+    text-decoration: none;
+}
+
+.match{
+    min-width: 150px;
+    transition: box-shadow 0.5s ease-in;
+    height: 250px;
+    padding: 5px 10px;
+    text-overflow: ellipsis !important;
+}
+
+.match:hover{
+    box-shadow: 0px 0px 15px #888888;
+}
+
+.match-title, .match-footer{
+    height: 70px !important;
+    margin-bottom: 10px;
+}
+
+.match-body{
+    height: 110px !important;
+}

@@ -1,0 +1,21 @@
+.scoreboard-item{
+    display: inline-flex;
+}
+
+.ball{
+    margin-right: 5px;
+}
+
+.ball-details{
+    border-left: 2px solid #888888;
+    margin-left: 5px !important;
+}
+
+.ball-details > *{
+    padding-left: 5px;
+}
+
+.badge-danger{
+    background: red;
+    color: #fff;
+}

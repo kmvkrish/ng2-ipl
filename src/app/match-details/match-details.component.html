@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row" *ngIf="match">
+    <div class="col-sm-3">
+      <div class="well match-summary">
+        <div class="match-summary-header">
+          <h4>Match {{match.id}}</h4>
+          <p> {{match.team1}} vs {{match.team2}} </p>
+        </div>
+        <div class="match-summary-body">
+          <p>
+            <i class="fa fa-calendar-o">&nbsp;</i>{{match.date | date: "MMM dd, yyyy"}}
+          </p>
+        </div>
+        <div class="match-summary-footer">
+          <button type="button" class="btn btn-primary form-control" (click)="getMatchSummary()">Get Ball by Ball SUmmary</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <div class="match-other-details">
+        <div class="well">
+          <p><strong>Season: </strong> {{match.season}}</p>
+          <p><strong>Team 1: </strong> {{match.team1}}</p>
+          <p><strong>Team 2: </strong> {{match.team2}}</p>
+          <p>
+            <strong>Toss:</strong> {{match.toss_winner}}
+          </p>
+          <p>
+            <strong>Opted to:</strong> {{match.toss_decision}}
+          </p>
+          <p>
+            <strong>Match Result: </strong> {{match.winner}} won by <strong *ngIf="match.win_by_runs">{{match.win_by_runs}} runs </strong>
+            <strong
+              *ngIf="match.win_by_wickets">{{match.win_by_wickets}} wickets </strong>
+              <em *ngIf="match.dl_applied">by D/L</em>
+          </p>
+          <p>
+            <strong>Player of the Match: </strong> {{match.player_of_match}}
+          </p>
+          <div class="match-referees">
+            <p>
+              <strong>Umpire 1: </strong> {{match.umpire1}}
+            </p>
+            <p>
+              <strong>Umpire 2: </strong> {{match.umpire2}}
+            </p>
+            <p *ngIf="match.umpire3">
+              <strong>Umpire 3: </strong> {{match.umpire3}}
+            </p>
+          </div>
+        </div>
+        <match-summary *ngIf="matchScoreboard" [matchScoreboard]="matchScoreboard">Loading...</match-summary>
+      </div>
+    </div>
+  </div>
+</div>
